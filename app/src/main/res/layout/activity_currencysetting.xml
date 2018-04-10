@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/activity_hometoolbar" />
+    </RelativeLayout>
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="7dp">
+
+        <LinearLayout
+            android:id="@+id/l_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_bg_small">
+
+
+            <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                android:id="@+id/avilablebalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/avilablebalance"
+                android:textColor="@color/colorwhite"
+                android:textSize="16sp" />
+
+            <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                android:id="@+id/ccn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/avilablebalance"
+                android:layout_centerHorizontal="true"
+                android:text="CCN"
+                android:textColor="@color/colorwhite"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="80dp"
+                android:layout_height="1dp"
+                android:layout_below="@id/ccn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorwhite" />
+
+            <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                android:id="@+id/textnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorwhite"
+                android:textSize="25sp" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="130dp"
+                android:layout_height="1dp"
+                android:layout_below="@id/textnumber"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorwhite" />
+
+            <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                android:id="@+id/txt_convertVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:textColor="@color/colorwhite"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relat"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/relative"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorlightgreen">
+
+                <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/todayprice"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/relative1"
+                android:background="@color/colorlight">
+
+                <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                    android:id="@+id/ccntext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/ccn"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/equal"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="="
+                    android:textColor="#000000"
+                    android:layout_toRightOf="@id/ccntext"
+                    android:textSize="18sp" />
+
+                <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                    android:id="@+id/ccnvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:layout_toRightOf="@id/equal"
+                    android:textSize="16sp" />
+
+                <!--  <ImageView
+                      android:layout_width="25dp"
+                      android:layout_centerVertical="true"
+                      android:layout_alignParentRight="true"
+                      android:background="@drawable/ic_down"
+                      android:layout_marginRight="20dp"
+                      android:layout_height="20dp" />-->
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/relat"
+            android:layout_marginTop="20dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <!-- </LinearLayout>
+    </ScrollView>-->
+
+</LinearLayout>

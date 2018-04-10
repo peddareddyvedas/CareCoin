@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="150dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/back_color"
+        android:background="#26343c"
+        android:layout_margin="1.5dp"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true">
+
+        <com.example.rise.carecoin.FONTS.BoldTextViewFontStyle
+            android:id="@+id/text_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Warning"
+            android:textColor="@color/colorwhite"
+            android:textSize="15sp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="15dp"
+            android:id="@+id/rl_txt"
+            android:layout_height="120dp">
+            <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/colorwhite"
+                android:layout_centerVertical="true"
+                android:id="@+id/textView"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <com.example.rise.carecoin.FONTS.ButtonFontStyle
+                    android:id="@+id/btn_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="@string/ok"
+                    android:textColor="@color/colorwhite"
+                    android:background="@color/colorlightgreen"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

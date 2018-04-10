@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+       >
+
+        <ImageView
+            android:id="@+id/img_colortear"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_adv_3" />
+
+        <com.example.rise.carecoin.FONTS.BoldTextViewFontStyle
+            android:id="@+id/testNameID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="215dp"
+            android:text="Tell a Friend"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/testDescriptionID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="120dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/sharefriend"
+            android:textSize="16dp" />
+       <!-- <View
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:background="@color/colorLighttext"
+            android:layout_height="1dp"/>
+
+        <com.example.rise.carecoin.FONTS.BoldTextViewFontStyle
+            android:id="@+id/gotit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:textSize="18sp"
+            android:background="@color/colorwhite"
+            android:text="Got it" />-->
+    </RelativeLayout>
+
+</RelativeLayout>

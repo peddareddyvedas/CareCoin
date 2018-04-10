@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/ic_bg">
+
+        <com.example.rise.carecoin.FONTS.ButtonFontStyle
+            android:id="@+id/back"
+            android:layout_width="26dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_back"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp" />
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:id="@+id/profile"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Profile"
+            android:textColor="@color/colorwhite"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/ScrollView_register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/image"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/l_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:visibility="visible">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlUserLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imageView_profile"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/ic_profile" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imageView_profile"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginRight="80dp"
+                            android:layout_marginTop="20dp">
+
+                            <RelativeLayout
+                                android:id="@+id/rl1"
+                                android:layout_width="60dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/signin">
+
+                                <ImageView
+                                    android:id="@+id/delete"
+                                    android:layout_width="16dp"
+                                    android:layout_height="20dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="20dp"
+                                    android:background="@drawable/ic_delete" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl2"
+                                android:layout_width="60dp"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/signin">
+
+                                <ImageView
+                                    android:id="@+id/galary"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:background="@drawable/ic_images" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl3"
+                                android:layout_width="60dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/signin">
+
+                                <ImageView
+                                    android:id="@+id/camera"
+                                    android:layout_width="20dp"
+                                    android:layout_height="18dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:background="@drawable/ic_cam" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/relative3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rlUserLogin">
+
+                        <RelativeLayout
+                            android:id="@+id/relat"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@drawable/recyclerviewborders">
+
+                            <com.example.rise.carecoin.FONTS.EditTextFontStyle
+                                android:id="@+id/name"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignStart="@+id/email"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="17dp"
+                                android:background="@drawable/addpayee"
+                                android:hint="Enter Your Name"
+                                android:paddingLeft="15dp"
+                                android:singleLine="true"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/colorLighttext"
+                                android:textSize="16sp" />
+
+                            <com.example.rise.carecoin.FONTS.EditTextFontStyle
+                                android:id="@+id/email"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_below="@id/name"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/addpayee"
+                                android:hint="Enter Your Email"
+                                android:paddingLeft="15dp"
+                                android:singleLine="true"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/colorLighttext" />
+
+                            <com.example.rise.carecoin.FONTS.EditTextFontStyle
+                                android:id="@+id/country"
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:layout_below="@id/email"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/addpayee"
+                                android:paddingLeft="15dp"
+                                android:text="+91"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/colorLighttext"
+                                android:textSize="16sp" />
+
+                            <com.example.rise.carecoin.FONTS.EditTextFontStyle
+                                android:id="@+id/phnumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_below="@id/email"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_toRightOf="@id/country"
+                                android:background="@drawable/addpayee"
+                                android:hint="Enter phone number"
+                                android:inputType="number"
+                                android:paddingLeft="8dp"
+                                android:singleLine="true"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/colorLighttext" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <com.example.rise.carecoin.FONTS.ButtonFontStyle
+                        android:id="@+id/save"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/relative3"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginRight="90dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/signin"
+                        android:text="Save"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorwhite" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imagezoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

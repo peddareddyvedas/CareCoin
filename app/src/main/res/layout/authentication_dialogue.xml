@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_border"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_code"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@color/colorwhite">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorlightgreen">
+
+            <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                android:id="@+id/text_auth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorwhite"
+                android:text="Enter the authentication code"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <com.example.rise.carecoin.FONTS.EditTextFontStyle
+            android:id="@+id/ed_code"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/textcell"
+            android:singleLine="true"
+            android:textAlignment="center" />
+
+        <RelativeLayout
+            android:id="@+id/rl_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/ed_code"
+            android:layout_marginBottom="100dp"
+
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.495"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/btn_resend"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:text="@string/resend"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffff" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.495"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/btn_verify"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+
+                        android:text="@string/verify"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorwhite" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

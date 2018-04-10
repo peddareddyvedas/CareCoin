@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/activity_hometoolbar" />
+    </RelativeLayout>
+
+    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="@string/helpcenter"
+        android:textSize="17sp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp" />
+
+    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/knowledgebase"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/support_borders" />
+
+    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="@string/creaatetickets"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/support_borders" />
+
+    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="@string/mytickets"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/support_borders" />
+
+    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="@string/ratetheapp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/support_borders" />
+
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorlightgreen</item>
+        <item name="colorPrimaryDark">@color/colorlightgreen</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.NoPreviewWindow" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="CustomTabs" parent="TextAppearance.Design.Tab">
+    <item name="textAllCaps">false</item>
+    <item name="android:textAllCaps">false</item>
+
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialogue_enteranim</item>
+        <item name="android:windowExitAnimation">@anim/dialogue_exitanim</item>
+    </style>
+</resources>

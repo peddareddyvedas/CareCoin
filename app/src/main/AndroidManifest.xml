@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rise.carecoin">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera2" />
+
+
+    <application
+        android:name="com.example.rise.carecoin.NetWork.TestApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_coin"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_coin"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <receiver
+            android:name="com.example.rise.carecoin.NetWork.ConnectionReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".PushNotification.FirebaseNotificationReceiver"
+            android:exported="true"
+            android:enabled="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <!---->
+        <!--<activity android:name=".LoginModule.SplashScreenViewController"
+            android:theme="@style/Theme.NoPreviewWindow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+        <activity
+            android:name=".LoginModule.SplashScreenViewController"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoPreviewWindow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <!---->
+
+        <activity
+            android:name="com.example.rise.carecoin.LoginModule.LoginViewController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.rise.carecoin.LoginModule.ForgotpasswordViewController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.rise.carecoin.LoginModule.ChangePasswordViewController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.rise.carecoin.LoginModule.RegisterViewController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.rise.carecoin.LoginModule.NewpasswordViewController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.rise.carecoin.HomeModule.HomeActivityViewController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.rise.carecoin.SideMenu.SupportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.rise.carecoin.SideMenu.AddpayeeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.rise.carecoin.SideMenu.CurrencySettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.rise.carecoin.HomeModule.ConfirmSendViewController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.rise.carecoin.Transaction.TransactionTabsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.rise.carecoin.SideMenu.ContactsViewController"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".Transaction.TransactionsDetailsViewController"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.example.rise.carecoin.HomeModule.CaptureActivityPortrait"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity android:name=".LoginModule.PersonalinfoViewController"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".LoginModule.CareCoinAdvertizeViewController"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".LoginModule.PassCodeViewController"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".Settings.SettingsViewController"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".Settings.LanguageViewController"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".Settings.AboutUsViewController"
+            android:screenOrientation="portrait"
+            />
+
+        <service
+            android:name=".PushNotification.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".PushNotification.MyFirebaseMessagingService"
+            android:exported="true"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

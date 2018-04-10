@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:launchMode="singleInstance"
+    android:orientation="vertical">
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/AppTheme">
+        <!-- The main content view -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/activity_hometoolbar" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/relative"
+            android:layout_marginTop="55dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textAlignment="viewStart"
+                app:tabGravity="fill"
+                android:layout_below="@id/relative"
+                app:tabIndicatorColor="@color/colorlightgreen"
+                app:tabIndicatorHeight="3dp"
+                app:tabTextColor="#ffffff"
+                android:background="@drawable/ic_bg"
+                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                android:textAllCaps="false"
+                app:tabMode="fixed"
+                app:tabPaddingTop="5dp"
+                />
+           <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/fragment_navigation_drawer"
+            android:layout_width="260dp"
+            android:name="com.example.rise.carecoin.HomeModule.SideMenuViewController"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/activity_fragment_drawer_list"
+            tools:layout="@layout/activity_fragment_drawer_list" />
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

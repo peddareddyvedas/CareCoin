@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/activity_hometoolbar" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d7f1ed">
+
+
+        <com.example.rise.carecoin.FONTS.EditTextFontStyle
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/addpayee"
+            android:hint="Name"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <com.example.rise.carecoin.FONTS.EditTextFontStyle
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/addpayee"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@id/ed_email"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/addpayee">
+
+            <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                android:id="@+id/walletaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                android:autoLink="web"
+                android:background="@android:color/transparent"
+                android:paddingLeft="5dp"
+                android:text="Wallet Address"
+                android:textSize="13sp" />
+
+            <!--<TextView
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/addpayee"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorlightgreen" />
+
+            <ImageView
+                android:id="@+id/qrcodeimage"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/ic_qrcode" />-->
+        </RelativeLayout>
+
+
+        <com.example.rise.carecoin.FONTS.ButtonFontStyle
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/signin"
+            android:text="@string/save"
+            android:textColor="@color/colorwhite"
+            android:visibility="gone" />
+
+        <com.example.rise.carecoin.FONTS.ButtonFontStyle
+            android:id="@+id/btn_save1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="70dp"
+            android:text="@string/save"
+            android:textColor="@color/colorwhite"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

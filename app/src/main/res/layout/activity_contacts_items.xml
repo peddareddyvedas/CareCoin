@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativesetting"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_marginRight="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_icon"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="15dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="85dp"
+            android:layout_marginTop="40dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:id="@+id/rl_invite"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="20dp">
+            <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                android:layout_width="80dp"
+                android:textSize="15dp"
+                android:text="Invite"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorlightgreen"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#cccccc"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+

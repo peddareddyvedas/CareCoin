@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#26343C">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/toolbar"
+            android:visibility="gone"
+            layout="@layout/activity_hometoolbar" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_one"
+        android:layout_height="wrap_content">
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/promptview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your 4-digit passcode"
+            android:layout_marginTop="30dp"
+            android:textSize="18.0sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:padding="20.0dp"
+            />
+
+        <in.arjsna.passcodeview.PassCodeView
+            android:id="@+id/pass_code_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:digits="4"
+            app:digit_size="30.0dp"
+            app:key_text_size="30.0sp"
+            android:layout_marginTop="110dp"
+            android:padding="25.0dp"
+            app:empty_drawable="@drawable/empty_dot"
+            app:filled_drawable="@drawable/filled_dot"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_two"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/promptview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm your 4-digit passcode"
+            android:layout_marginTop="30dp"
+            android:textSize="18.0sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:padding="20.0dp"
+            />
+
+        <in.arjsna.passcodeview.PassCodeView
+            android:id="@+id/pass_code_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:digits="4"
+            app:digit_size="30.0dp"
+            app:key_text_size="30.0sp"
+            android:layout_marginTop="110dp"
+            android:padding="25.0dp"
+            app:empty_drawable="@drawable/empty_dot"
+            app:filled_drawable="@drawable/filled_dot"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_three"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/promptview3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm your previous 4-digit passcode"
+            android:layout_marginTop="30dp"
+            android:textSize="18.0sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:padding="20.0dp"
+            />
+
+        <in.arjsna.passcodeview.PassCodeView
+            android:id="@+id/pass_code_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:digits="4"
+            app:digit_size="30.0dp"
+            app:key_text_size="30.0sp"
+            android:layout_marginTop="110dp"
+            android:padding="25.0dp"
+            app:empty_drawable="@drawable/empty_dot"
+            app:filled_drawable="@drawable/filled_dot"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_skip"
+            android:text="Skip"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            />
+    </RelativeLayout>
+    </RelativeLayout>

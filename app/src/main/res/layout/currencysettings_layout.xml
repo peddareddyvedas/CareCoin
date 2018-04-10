@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativesetting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <com.example.rise.carecoin.FONTS.BoldTextViewFontStyle
+            android:id="@+id/dollerimage"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorlightgreen" />
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/devicename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/tick"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_select"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#cccccc" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

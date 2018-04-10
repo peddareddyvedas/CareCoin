@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorwhite"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_hometoolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp">
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Info"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/rl_aboutUs"
+                    android:background="@color/colorlight">
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="About"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp" />
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:id="@+id/txt_wallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+
+                        android:layout_marginRight="30dp"
+                        android:text="V4.32"
+                        android:textSize="14dp" />
+
+                    <com.example.rise.carecoin.FONTS.ButtonFontStyle
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/ic_rightarrow" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorwhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/rl_faq"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorlight">
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="Frequently Asked Questions"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp" />
+
+                    <com.example.rise.carecoin.FONTS.ButtonFontStyle
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/ic_rightarrow" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorwhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp">
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Account"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/rl_currency"
+                    android:background="@color/colorlight">
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="Currency"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp" />
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/currencttype"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        android:text="USD"
+                        android:textSize="14dp" />
+
+                    <com.example.rise.carecoin.FONTS.ButtonFontStyle
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/ic_rightarrow" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorwhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/rl_languages"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorlight">
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="Language"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp" />
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/language_txt"
+                        android:layout_marginRight="30dp"
+                        android:text="English(US)"
+                        android:textSize="14dp" />
+
+                    <com.example.rise.carecoin.FONTS.ButtonFontStyle
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/ic_rightarrow" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorwhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorlight"
+                    android:visibility="gone">
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="Wallet Backup"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp" />
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        android:text="Backup not saved"
+                        android:textColor="#ff0012"
+                        android:textSize="14dp" />
+
+                    <com.example.rise.carecoin.FONTS.ButtonFontStyle
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/ic_rightarrow" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorwhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp">
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Privacy"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/colorlight">
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="Ask For PIN when opening wallet"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp" />
+
+                    <ToggleButton
+                        android:id="@+id/toggle"
+                        android:layout_width="50dp"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/ic_off"
+                        android:focusable="false"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:focusableInTouchMode="false"
+                        android:textOff=""
+                        android:textOn="" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorwhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/rl_changepin"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorlight">
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="Change PIN"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp" />
+
+                    <com.example.rise.carecoin.FONTS.ButtonFontStyle
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/ic_rightarrow" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorwhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/rl_forgotpin"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorlight">
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="Forgot PIN"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp" />
+
+                    <com.example.rise.carecoin.FONTS.ButtonFontStyle
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/ic_rightarrow" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorwhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_psw"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorlight">
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="Change Password"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp" />
+
+                    <com.example.rise.carecoin.FONTS.ButtonFontStyle
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/ic_rightarrow" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorwhite" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp">
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Display"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/colorlight">
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="CCN Decimal Display"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp" />
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:id="@+id/tVProgress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:text="1"
+                        android:textSize="14dp" />
+
+
+                    <SeekBar
+                        android:id="@+id/simpleSeekBar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:max="10"
+                        android:indeterminate="false"
+                        android:progress="1" />
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:id="@+id/seekbarprogress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:text="0.0"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp">
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="7dp"
+                    android:visibility="gone"
+                    android:background="@color/colorlight">
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="Phone Number"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp" />
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        android:text="Verified"
+                        android:textSize="14dp" />
+
+                    <com.example.rise.carecoin.FONTS.ButtonFontStyle
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/ic_rightarrow" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorwhite" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/rl_contacts"
+                    android:background="@color/colorlight">
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="Contacts"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp" />
+
+                    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:visibility="gone"
+                        android:layout_marginRight="30dp"
+                        android:text="Enabled"
+                        android:textSize="14dp" />
+
+                    <com.example.rise.carecoin.FONTS.ButtonFontStyle
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/ic_rightarrow" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorwhite" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

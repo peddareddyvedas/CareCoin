@@ -1,0 +1,47 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:background="@drawable/ic_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/toolbar_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_home"
+                android:layout_centerVertical="true" />
+
+            <com.example.rise.carecoin.FONTS.TextViewFontStyle
+                android:id="@+id/toolbar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+
+            <ImageView
+                android:id="@+id/img_close"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

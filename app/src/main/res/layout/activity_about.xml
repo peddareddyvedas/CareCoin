@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/activity_hometoolbar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <com.example.rise.carecoin.FONTS.BoldTextViewFontStyle
+            android:id="@+id/ccnwallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/ccnwallet"
+            android:textColor="@color/colorBlack"
+            android:textSize="22sp" />
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/byccn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ccnwallet"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/byccn.com"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ccnwallet"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@id/byccn"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="@string/vedas"
+            android:textColor="@color/colorBlack"
+            android:textColorLink="@color/colorlightgreen"
+            android:textSize="16sp" />
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/version_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/byccn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="v 1.0"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/recyclerviewborders"
+        android:orientation="vertical">
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/twitter"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/edittwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/twitter"
+            android:autoLink="web"
+            android:clickable="true"
+            android:paddingLeft="30dp"
+            android:singleLine="true"
+
+            android:textColorLink="@color/colorlightgreen"
+            android:textSize="16sp" />
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/twitter"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/facebook"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/editfacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/twitter"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/facebook"
+            android:autoLink="web"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColorLink="@color/colorlightgreen"
+            android:textSize="16sp" />
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/facebook"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/website"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/editwebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/facebook"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/website"
+            android:autoLink="web"
+            android:clickable="true"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColorLink="@color/colorlightgreen"
+            android:textSize="16sp" />
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/website"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/news"
+            android:textColor="@color/colorBlack"
+
+            android:textSize="16sp" />
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/editnotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/website"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/website"
+            android:autoLink="web"
+            android:clickable="true"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColorLink="@color/colorlightgreen"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/website"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="120dp"
+            android:background="#cdcdcd" />
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/doulike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/douliketheapp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <com.example.rise.carecoin.FONTS.ButtonFontStyle
+            android:id="@+id/pleaseratetheapp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/doulike"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/signin"
+            android:text="@string/pleaseratetheapp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorwhite"
+            android:textSize="16sp" />
+
+        <!-- <WebView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/webView"
+             android:layout_below="@+id/button"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentBottom="true" />-->
+
+
+    </RelativeLayout>
+
+</LinearLayout>

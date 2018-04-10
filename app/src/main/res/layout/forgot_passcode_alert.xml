@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="275dp"
+    android:layout_height="205dp"
+    android:orientation="vertical">
+
+    <com.example.rise.carecoin.FONTS.BoldTextViewFontStyle
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Enter your Passcode"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textview"
+        android:background="#000000"/>
+    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:textColor="@color/colorlightgreen"
+        android:text="To set passcode please verify your account."
+        android:layout_marginTop="45dp"
+        />
+
+    <com.example.rise.carecoin.FONTS.EditTextFontStyle
+        android:id="@+id/ed_code"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="75dp"
+        android:gravity="center"
+        android:paddingRight="30dp"
+        android:singleLine="true"
+        android:hint="please enter account password"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="13sp"
+        android:inputType="textPassword"
+        android:background="@drawable/layout_cornerbg"
+        android:textStyle="normal"/>
+
+    <CheckBox
+        android:id="@+id/chk"
+        android:button="@drawable/checkbox"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_width="30dp"
+        android:scaleX="0.70"
+        android:scaleY="0.70"
+        android:layout_marginTop="90dp"
+        android:layout_height="20dp" />
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_below="@id/textview1"
+        android:layout_marginTop="30dp"
+        android:background="#26343c"
+        android:layout_height="1dp"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:id="@+id/linear"
+        android:layout_marginTop="125dp"
+        android:layout_below="@id/textview"
+        android:layout_height="35dp">
+        <com.example.rise.carecoin.FONTS.ButtonFontStyle
+            android:id="@+id/btn_cancel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/layout_border"
+            android:text="cancel"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/button"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.example.rise.carecoin.FONTS.TextViewFontStyle
+            android:id="@+id/textView2"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+
+        <com.example.rise.carecoin.FONTS.ButtonFontStyle
+            android:id="@+id/btn_setpin"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/signin"
+            android:text="set pin"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorwhite"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <com.example.rise.carecoin.FONTS.TextViewFontStyle
+        android:layout_width="wrap_content"
+        android:layout_below="@id/linear"
+        android:layout_height="10dp" />
+
+</RelativeLayout>
+
+
